@@ -132,11 +132,21 @@ export function InstallSection() {
           whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6 }}
-          className="mt-12 flex justify-center"
+          className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4"
         >
           <Link
-            to="/installation"
+            to="/installation#download"
             className="group inline-flex items-center gap-2 text-sm font-medium text-accent-400 transition-colors hover:text-accent-300"
+          >
+            Download the desktop app
+            <ArrowRight
+              className="size-4 transition-transform group-hover:translate-x-0.5"
+              aria-hidden
+            />
+          </Link>
+          <Link
+            to="/installation"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-dim transition-colors hover:text-fg"
           >
             View full installation guide
             <ArrowRight

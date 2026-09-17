@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Terminal, FileCode2, Rocket, MousePointerClick, Check, ExternalLink, CircleHelp } from "lucide-react";
 import { OSSelector } from "../components/installation/OSSelector";
 import { InstallCommand } from "../components/installation/InstallCommand";
+import { DownloadSection } from "../components/download/DownloadSection";
 import { AnimatedTerminal, type ScriptLine } from "../components/terminal/AnimatedTerminal";
 import { Reveal, Stagger, StaggerItem } from "../components/animations/Reveal";
 import { useDocumentTitle } from "../lib/route";
@@ -96,7 +97,9 @@ export function Installation() {
         </div>
       </header>
 
-      <div className="shell mt-14 grid items-start gap-12 sm:mt-16 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
+      <DownloadSection className="mt-16 sm:mt-20" />
+
+      <div className="shell mt-16 grid items-start gap-12 sm:mt-20 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
         <div className="order-2 lg:order-1">
           <Stagger className="flex flex-col gap-3" amount={0.3}>
             {STEPS.map((step, i) => (

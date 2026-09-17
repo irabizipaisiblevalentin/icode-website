@@ -4,6 +4,7 @@ export const LAUNCH_COMMAND = "icode";
 export const NAV_LINKS = [
   { label: "Product", to: "/#product" },
   { label: "Features", to: "/#features" },
+  { label: "Download", to: "/installation#download" },
   { label: "Installation", to: "/installation" },
   { label: "Activate", to: "/activate" },
   { label: "Pricing", to: "/pricing" },

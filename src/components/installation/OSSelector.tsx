@@ -5,7 +5,7 @@ import { OS_DETAILS, OS_OPTIONS, type OsId } from "../../lib/data";
 import { usePrefersReducedMotion } from "../../lib/hooks";
 import { cn } from "../../lib/cn";
 
-const ICONS: Record<OsId, ReactNode> = {
+export const ICONS: Record<OsId, ReactNode> = {
   windows: <Monitor className="size-4" aria-hidden />,
   macos: (
     <svg viewBox="0 0 24 24" className="size-4 fill-none" aria-hidden>
